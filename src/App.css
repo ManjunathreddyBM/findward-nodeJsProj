@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  background-color: #008080; /* Background color */
+  padding: 10px 0;
+  color:#fff;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container {
+  text-align: center; /* Center text */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  width: 50px; /* Logo width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.logo-text {
+  margin-top: 5px; /* Space between image and text */
+  font-size: 24px; /* Adjust font size */
+}
+
+/* Responsive Links */
+.nav__link {
+  display: flex;
+  justify-content: center; /* Center links */
+  flex-wrap: wrap; /* Allow links to wrap */
+  margin-top: 10px; /* Space above links */
+}
+
+.nav__link a {
+  margin: 0 10px; /* Space between links */
+  text-decoration: none; /* Remove underline from links */
+  color: #007bff; /* Link color */
+}
+
+@media (max-width: 600px) {
+  .nav__link a {
+    margin: 5px 0; /* Adjust margin for smaller screens */
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.coordinates {
+  margin: 10px 0;
+  font-size: 16px;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+  /* Responsive styles go here */
 }
